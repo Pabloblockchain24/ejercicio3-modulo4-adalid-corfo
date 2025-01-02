@@ -1,0 +1,20 @@
+@use "../themes/theme-adalid" as colors;
+
+button {
+    padding: 1rem;
+    background-color: colors.$primary-color-button;
+    color: colors.$white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: colors.$primary-color-button-hover;
+  }
+  
+  button:disabled {
+    background-color: colors.$shadow-button-color;
+    cursor: not-allowed;
+  }
